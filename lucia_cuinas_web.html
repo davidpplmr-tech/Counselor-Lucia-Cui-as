@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Cuiñas - Counselor Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            background: #34495E;
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .services, .contact-info, .testimonials {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services li {
+            margin: 10px 0;
+        }
+        .contact-info a.button {
+            display: inline-block;
+            background-color: #27AE60;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact-info a.button:hover {
+            background-color: #2ECC71;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #34495E;
+        }
+        footer {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+        .testimonial-item {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lucia Cuiñas</h1>
+    <p>Counselor Profesional | Apoyo Psicológico Online</p>
+</header>
+
+<nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Lucia Cuiñas, Counselor profesional con experiencia en acompañamiento terapéutico y trabajo con adicciones. 
+       He trabajado con personas de distintos perfiles, ofreciendo un espacio seguro y confidencial para explorar emociones, 
+       desarrollar herramientas de afrontamiento y mejorar el bienestar emocional. Mi enfoque se adapta a cada individuo, 
+       priorizando la escucha activa y el apoyo profesional.</p>
+</section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+        <ul>
+            <li>Sesiones individuales (1 hora) - $25.000 ARS</li>
+            <li>Sesiones para parejas (1 hora) - $40.000 ARS</li>
+            <li>Acompañamiento terapéutico en adicciones</li>
+            <li>Apoyo emocional para distintos perfiles y situaciones</li>
+        </ul>
+        <p>Todas las sesiones se realizan <strong>online</strong>, adaptándose a tu horario y comodidad.</p>
+        <a href="https://wa.me/5491167473379" target="_blank" class="button">Agendar sesión por WhatsApp</a>
+    </div>
+</section>
+
+<section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+        <div class="testimonial-item">
+            "Lucia me ayudó a superar momentos difíciles y encontrar herramientas para manejar mi ansiedad. Recomiendo sus sesiones 100%."
+        </div>
+        <div class="testimonial-item">
+            "Gracias a sus acompañamientos, mi pareja y yo pudimos mejorar nuestra comunicación y comprensión mutua."
+        </div>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+        <p>Podés comunicarte directamente vía WhatsApp:</p>
+        <a href="https://wa.me/5491167473379" target="_blank" class="button">+54 9 11 6747-3379</a>
+    </div>
+
+    <div class="contact-info">
+        <p>O completá este formulario y te responderé a la brevedad:</p>
+        <form action="mailto:lucia@example.com" method="post" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Lucia Cuiñas | Counselor Profesional</p>
+</footer>
+
+</body>
+</html>
