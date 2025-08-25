@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apoyo Psicológico Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {font-family: 'Roboto', sans-serif; margin:0; background:#f9f9f9; color:#333;}
+    header {background:#6C63FF; color:white; text-align:center; padding:5rem 1rem;}
+    header h1 {font-size:2.5rem;}
+    .btn {background:white; color:#6C63FF; padding:0.7rem 1.5rem; border-radius:8px; display:inline-block; margin-top:1rem; text-decoration:none;}
+    section {max-width:900px; margin:2rem auto; padding:0 1rem;}
+    h2 {text-align:center; margin-bottom:1.5rem;}
+    .about, .services, .testimonials {display:grid; gap:2rem;}
+    .about {grid-template-columns:1fr 2fr; align-items:center;}
+    .about img {border-radius:10px; width:100%;}
+    .service-card, .testimonial-card {background:white; padding:1.5rem; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .services {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .testimonials {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .testimonial-card img {border-radius:50%; width:80px; height:80px; object-fit:cover; margin-bottom:1rem;}
+    form {display:flex; flex-direction:column; gap:1rem;}
+    input, textarea {padding:0.8rem; border-radius:8px; border:1px solid #ccc;}
+    button {background:#6C63FF; color:white; border:none; padding:0.8rem; border-radius:8px; cursor:pointer;}
+    footer {background:#6C63FF; color:white; text-align:center; padding:1.5rem; margin-top:2rem;}
+    @media(max-width:768px){.about{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apoyo psicológico online</h1>
+    <p>Conectate con profesionales desde la comodidad de tu hogar</p>
+    <a href="#contacto" class="btn">Agendar sesión</a>
+  </header>
+  <section id="sobre-mi" class="about">
+    <img src="images/profesional.jpg" alt="Foto de la profesional">
+    <div>
+      <h2>Sobre mí</h2>
+      <p>Soy psicóloga con experiencia en terapia online, especializada en ansiedad, estrés y bienestar emocional.</p>
+    </div>
+  </section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service-card"><h3>Consulta individual</h3><p>Sesión de 50 minutos - $50 USD</p></div>
+      <div class="service-card"><h3>Consulta de pareja</h3><p>Sesión de 60 minutos - $80 USD</p></div>
+      <div class="service-card"><h3>Asesoramiento online</h3><p>Paquete de 3 sesiones - $120 USD</p></div>
+    </div>
+  </section>
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+      <div class="testimonial-card"><img src="images/cliente1.jpg"><p>"Excelente acompañamiento, me siento mucho mejor."</p><strong>- Juan P.</strong></div>
+      <div class="testimonial-card"><img src="images/cliente2.jpg"><p>"Me ayudó a superar momentos difíciles con herramientas efectivas."</p><strong>- María R.</strong></div>
+    </div>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="5" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Psicología Online. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
